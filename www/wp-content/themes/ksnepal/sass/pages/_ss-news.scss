@@ -285,18 +285,19 @@
 
 .news-part.inner-banner {
     min-height: 15.125rem;
-    margin: 2.875rem 0 0;
+    //margin: 2.875rem 0 0;
 
-    @media (max-width: 576px) {
-        margin: 0;
-    }
+    // @media (max-width: 576px) {
+    //     margin: 0;
+    // }
 
     @media (max-width: 768px) {
-        // min-height: 31.188rem;
         height: auto;
     }
+}
 
-    @media (min-width: 992px) {
-        // height: 70vh;
+.news-part {
+    p {
+        color: #fff;
     }
 }

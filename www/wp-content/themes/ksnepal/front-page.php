@@ -252,7 +252,6 @@ $id = get_the_ID();
                             alt="Card image cap">
                     </div>
                     <div class="card-body">
-
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up
                             the bulk of the
@@ -486,64 +485,84 @@ $id = get_the_ID();
     </div>
 </section>
 
-<section class="condolence justify-content-center condolence-banner bg-cover" id="condolence">
-    <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2021/04/pexels-alena-koval-961402-scaled.jpg"
-        alt=" img" />
-    <div class="container">
+<section class="condolence-details" id="condolence">
+    <section class="condolence justify-content-center condolence-banner bg-cover">
+        <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2021/04/pexels-alena-koval-961402-scaled.jpg"
+            alt=" img" />
+        <div class="container text-center">
+            <h2 class="h1">हार्दिक श्रद्धांजली</h2>
+            <img class="card-img-top"
+                src="http://kshatreesamajnepal.loc/wp-content/uploads/2020/03/advance-package-bg.jpg"
+                alt="Card image cap">
+        </div>
+    </section>
 
-        <div class="card">
-            <div class="text-center box-heading">
-                <h2 class="h1">हार्दिक श्रद्धांजली</h2>
-            </div>
-            <div class="text-center condolence-body">
-                <img class="card-img-top"
-                    src="http://kshatreesamajnepal.loc/wp-content/uploads/2020/03/advance-package-bg.jpg"
-                    alt="Card image cap" style="height: 370px; width: 550px;">
-                <div class="card-body">
-                    <h4 class="text-center">श्री ...... ....</h3>
-                        <p>क्षत्री समाज नेपाल,केन्द्रीय समितिका .. २०७७ कार्तिक ९ गते ७८ बर्षको उमेरमा र ५
-                            दिन पछि नै
-                            २०७७ कार्तिक १४ गते .. बर्षको उमेरमा असामयिक निधन
-                            भएकोले हामी सम्पुर्ण खश क्षत्री हरु मर्माहत भएका छौ । यस शोकको घडीमा परिवार आफन्तजन सबैमा
-                            धैर्य
-                            धारण गर्ने शक्ति प्राप्त होस भन्ने कामना गर्दै समवेदना व्यक्त गर्दछौ ।दिवंगत आत्माहरु प्रति
-                            हार्दिक श्रद्धांजलि अर्पण गर्दछौ। क्षत्री समाज नेपाल,केन्द्रीय समितिका .. २०७७ कार्तिक ९ गते
-                            ७८ बर्षको उमेरमा र ५
-                            दिन पछि नै
-                            क्षत्री समाज नेपाल,केन्द्रीय समितिका .. २०७७ कार्तिक ९ गते ७८ बर्षको उमेरमा र ५
-                            दिन पछि नै
-                            २०७७ कार्तिक १४ गते .. बर्षको उमेरमा असामयिक निधन
-                            भएकोले हामी सम्पुर्ण खश क्षत्री हरु मर्माहत भएका छौ । यस शोकको घडीमा परिवार आफन्तजन सबैमा
-                            धैर्य
-                            धारण गर्ने शक्ति प्राप्त होस भन्ने कामना गर्दै समवेदना व्यक्त गर्दछौ ।दिवंगत आत्माहरु प्रति
-                            हार्दिक श्रद्धांजलि अर्पण गर्दछौ। क्षत्री समाज नेपाल,केन्द्रीय समितिका .. २०७७ कार्तिक ९ गते
-                            ७८ बर्षको उमेरमा र ५
-                            दिन पछि नै </p>
-                        <div class="card__mem text-center">
-                            <div class="mem-one">
-                                <p>केश बहादुर के.सी.</p>
-                                <p>महासचिव</p>
-                            </div>
-                            <div class="mem-two">
-                                <p>प्रा.डा. दिल बहादुर क्षत्री</p>
-                                <p>अध्यक्ष</p>
+    <div class="condolence-content">
+        <div class="container">
+            <div class="card-cover text-center">
+                <div class="condolence-title">
+                    <div class="birth-date">2020 BS</div>
+                    <h2>श्री ...... ....</h2>
+                    <div class="collapsed-date">2080 BS</div>
+
+                </div>
+                <div class="card">
+                    <div class="condolence-body">
+                        <div class="card-inner">
+                            <!-- <div class="time-period">
+                                2020 BS - 2080 BS
+                            </div> -->
+                            <div class="card-body">
+
+                                <p>क्षत्री समाज नेपाल,केन्द्रीय समितिका .. २०७७ कार्तिक ९ गते ७८ बर्षको उमेरमा र ५
+                                    दिन पछि नै
+                                    २०७७ कार्तिक १४ गते .. बर्षको उमेरमा असामयिक निधन
+                                    भएकोले हामी सम्पुर्ण खश क्षत्री हरु मर्माहत भएका छौ । यस शोकको घडीमा परिवार आफन्तजन
+                                    सबैमा
+                                    धैर्य
+                                    धारण गर्ने शक्ति प्राप्त होस भन्ने कामना गर्दै समवेदना व्यक्त गर्दछौ ।दिवंगत
+                                    आत्माहरु
+                                    प्रति
+                                    हार्दिक श्रद्धांजलि अर्पण गर्दछौ। क्षत्री समाज नेपाल,केन्द्रीय समितिका .. २०७७
+                                    कार्तिक ९
+                                    गते
+                                    ७८ बर्षको उमेरमा र ५
+                                    दिन पछि नै
+                                    क्षत्री समाज नेपाल,केन्द्रीय समितिका .. २०७७ कार्तिक ९ गते ७८ बर्षको उमेरमा र ५
+                                    दिन पछि नै
+                                    २०७७ कार्तिक १४ गते .. बर्षको उमेरमा असामयिक निधन
+                                    भएकोले हामी सम्पुर्ण खश क्षत्री हरु मर्माहत भएका छौ । यस शोकको घडीमा परिवार आफन्तजन
+                                    सबैमा
+                                    धैर्य
+                                    धारण गर्ने शक्ति प्राप्त होस भन्ने कामना गर्दै समवेदना व्यक्त गर्दछौ ।दिवंगत
+                                    आत्माहरुनै </p>
+                                <div class="card__mem text-center">
+                                    <div class="mem-one">
+                                        <p>केश बहादुर के.सी.</p>
+                                        <p>महासचिव</p>
+                                    </div>
+                                    <div class="mem-two">
+                                        <p>प्रा.डा. दिल बहादुर क्षत्री</p>
+                                        <p>अध्यक्ष</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="card__logo">
+                                    <img width="100" height="101"
+                                        src="http://kshatreesamajnepal.loc/wp-content/uploads/2020/03/inner_logo.gif"
+                                        class="navbar-brand" alt="Kshetri Samaj">
+                                    <div class="fam text-center mt-3">
+                                        <h4>क्षत्री समाज नेपाल</h4>
+                                        <p>केन्द्रीय समिति परिवार, कास्की</p>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="card__logo">
-                            <img width="100" height="101"
-                                src="http://kshatreesamajnepal.loc/wp-content/uploads/2020/03/inner_logo.gif"
-                                class="navbar-brand" alt="Kshetri Samaj">
-                            <div class="fam text-center mt-3">
-                                <h4>क्षत्री समाज नेपाल</h4>
-                                <p>केन्द्रीय समिति परिवार, कास्की</p>
-                            </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="image-activities event-activities">
     <div class="box-heading text-center">
