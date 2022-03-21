@@ -82,6 +82,26 @@ var ss;
 					}
 				})
 
+				$('.navbar-toggler .navbar-toggler-icon').on('click', function () {
+					if ($('#nav-pri').hasClass('show')) {
+						$('#nav-pri').hide()
+						$('#nav-pri > .site-tool').remove()
+					} else {
+						$('#nav-pri').append(
+							"<div class='site-tool'><div class='site-header-item site-header-button'><a class='btn' href='http://kshatreesamajnepal.loc/contact-us/' target='_self' title='Request A Quote <i class=&quot;fas fac-arrow-right&quot;></i>'>सम्पर्क गर्नुहोस <span class='icon-arrow-right2'></span> </a></div></div>"
+						)
+						$('#nav-pri').show()
+					}
+				});
+
+				$(window).on('scroll', function () {
+					if ($(window).scrollTop() > 400) {
+						$('.navbar').addClass('header-sticky');
+					} else {
+						$('.navbar').removeClass('header-sticky');
+					}
+				})
+
 				var matchHeight = function () {
 					function init() {
 						eventListeners();

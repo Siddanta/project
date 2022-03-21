@@ -132,24 +132,3 @@
             </nav>
         </header>
         <main id="main" class="site-content">
-            <script>
-            jQuery('.navbar-toggler .navbar-toggler-icon').on('click', function() {
-                if (jQuery('#nav-pri').hasClass('show')) {
-                    jQuery('#nav-pri').hide()
-                    jQuery('#nav-pri > .site-tool').remove()
-                } else {
-                    jQuery('#nav-pri').append(
-                        "<div class='site-tool'><div class='site-header-item site-header-button'><a class='btn' href='http://kshatreesamajnepal.loc/contact-us/' target='_self' title='Request A Quote <i class=&quot;fas fac-arrow-right&quot;></i>'>सम्पर्क गर्नुहोस <span class='icon-arrow-right2'></span> </a></div></div>"
-                    )
-                    jQuery('#nav-pri').show()
-                }
-            });
-
-            jQuery(window).on('scroll', function() {
-                if (jQuery(window).scrollTop() > 400) {
-                    jQuery('.navbar').addClass('header-sticky');
-                } else {
-                    jQuery('.navbar').removeClass('header-sticky');
-                }
-            })
-            </script>
