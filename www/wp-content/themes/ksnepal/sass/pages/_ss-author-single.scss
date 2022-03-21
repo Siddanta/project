@@ -1,0 +1,41 @@
+.author-section {
+
+    @media (min-width: 991px) and (max-width: 1200px) {
+        .designation-inner {
+            padding: 12px 18px;
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .image-section {
+        justify-content: center;
+        display: flex;
+    }
+
+    .news__container {
+        padding: 0 10px;
+    }
+
+    @media (max-width: 991px) {
+        .news__container {
+            padding: 0 10px;
+        }
+
+        .left-section {
+            padding: 30px;
+        }
+    }
+
+    .content-section {
+        p {
+            color: #000 !important;
+        }
+    }
+}

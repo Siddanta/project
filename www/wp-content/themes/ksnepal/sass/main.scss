@@ -1,0 +1,101 @@
+/*!
+Theme Name: ksnepal
+Theme URI: 
+Author: developer
+Author URI: https://www.google.com/
+Description: ksnepal
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ksnepal
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+ksnepal is based on WP Theme Generator. It is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+// Bootstrapg
+@import "../node_modules/bootstrap/scss/functions";
+
+@import "ss-custom-overrides";
+@import "vendor/ss-fonts";
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/input-group";
+@import "../node_modules/bootstrap/scss/custom-forms";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/jumbotron";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/media";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/print";
+
+
+// Utilities
+@import "utils/ss-functions";
+@import "utils/ss-helpers";
+@import "utils/ss-mixins";
+@import "utils/ss-fonts";
+
+
+// Base
+@import "base/ss-global";
+@import "base/ss-typography";
+
+
+// Components
+@import "components/ss-buttons";
+@import "components/ss-navigation";
+@import "components/ss-forms";
+@import "components/ss-banner";
+
+
+// Header
+@import "layouts/ss-site-header";
+
+// Layouts
+@import "layouts/ss-site-content";
+@import "layouts/ss-site-sidebar";
+
+
+// Pages
+@import "pages/ss-404";
+@import "pages/ss-homepage";
+@import "pages/ss-committee";
+@import "pages/ss-gallery";
+@import "pages/ss-news";
+@import "pages/ss-news-single";
+@import "pages/ss-file-download";
+@import "pages/ss-program";
+@import "pages/ss-banner";
+@import "pages/ss-contact";
+@import "pages/ss-program-single";
+@import "pages/ss-author-single";
+
+// Footer
+@import "layouts/ss-site-footer";

@@ -1,0 +1,38 @@
+{
+	"name": "ksnepal",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"directories": {
+		"lib": "lib"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.2",
+		"bootstrap": "^5.1.3",
+		"clean-css-cli": "^5.5.2",
+		"gulp-sass": "^5.1.0",
+		"node-sass": "^7.0.1",
+		"postcss-cli": "^9.1.0",
+		"terser-webpack-plugin": "^5.3.1",
+		"webpack": "^5.70.0",
+		"webpack-cli": "^4.9.2"
+	},
+	"scripts": {
+		"js": "webpack",
+		"css": "node-sass sass/main.scss ./style.css --output-style=compressed",
+		"clean": "rimraf css",
+		"compile": "node-sass --output-style=compressed --source-map=true --error-bell sass/main.scss ./style.css",
+		"prefix": "postcss ./style.css --use=autoprefixer --map=false --output=./style.css",
+		"minify": "cleancss --level=1 --source-map --source-map-inline-sources --output ./style.min.css ./style.css",
+		"dev": "npm run compile -- --watch",
+		"build": "npm run clean && npm run compile && npm run prefix && npm run minify"
+	},
+	"browserslist": [
+		"last 4 versions"
+	],
+	"author": "developer",
+	"license": "ISC",
+	"dependencies": {
+		"jquery-match-height": "^0.7.2"
+	}
+}

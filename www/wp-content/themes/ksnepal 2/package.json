@@ -1,0 +1,46 @@
+{
+  "name": "ksnepal",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+{
+	"name": "ksnepal",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"directories": {
+		"lib": "lib"
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.5.1",
+		"bootstrap": "^4.1.1",
+		"clean-css-cli": "^4.3.0",
+		"gulp-sass": "^3.1.0",
+		"node-sass": "^4.5.0",
+		"postcss-cli": "^6.1.2",
+		"terser-webpack-plugin": "^1.4.1",
+		"webpack": "^4.38.0",
+		"webpack-cli": "^3.3.6"
+	},
+	"scripts": {
+		"js": "webpack",
+		"css": "node-sass sass/main.scss ./style.css --output-style=compressed",
+		"clean": "rimraf css",
+		"compile": "node-sass --output-style=compressed --source-map=true --error-bell sass/main.scss ./style.css",
+		"prefix": "postcss ./style.css --use=autoprefixer --map=false --output=./style.css",
+		"minify": "cleancss --level=1 --source-map --source-map-inline-sources --output ./style.min.css ./style.css",
+		"dev": "npm run compile -- --watch",
+		"build": "npm run clean && npm run compile && npm run prefix && npm run minify"
+	},
+	"browserslist": [
+		"last 4 versions"
+	],
+	"author": "developer",
+	"license": "ISC"
+}

@@ -1,0 +1,20 @@
+// Banner
+
+.banner:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+@media (min-width:992px) {
+
+    .inner-banner {
+        min-height: 50.813rem;
+        padding: 14rem 0 3rem;
+    }
+}

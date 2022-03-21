@@ -1,0 +1,53 @@
+// Site Footer
+.site-footer {
+	text-align: center;
+	background-color: #f0f6fb;
+
+	.top-footer {
+		padding: 2rem 0 1rem;
+
+		@media (min-width: 768px) {
+			padding: 4rem 0 2rem;
+		}
+	}
+
+	.bottom-footer {
+		padding: 1.1rem 0;
+		color: white;
+		background-color: #002743;
+		-webkit-box-shadow: 1px 1px 8px 1px #043261;
+		box-shadow: 1px 1px 8px 1px #043261;
+	}
+
+	.footer-list {
+		text-decoration: none;
+		list-style: none;
+		margin: 2px 0 0 0;
+		padding: 0;
+
+		li {
+			line-height: 1.5;
+		}
+
+		a {
+			font-weight: bold;
+			color: #002743;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #6cb3fb;
+		}
+	}
+
+	// .follow-us {
+	// 	margin-top: 35px;
+	// }
+
+	.footer-list {
+		a {
+			font-weight: normal !important;
+			text-decoration: none !important;
+		}
+	}
+}
