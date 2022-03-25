@@ -33,7 +33,9 @@ use YoastSEO_Vendor\GuzzleHttp\Promise\Is;
                         </li>
                         <?php endforeach; ?>
                     </ul>
-                    <?php endif; ?>
+                    <?php
+                        wp_reset_postdata();
+                    endif; ?>
                 </div>
 
 

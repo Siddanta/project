@@ -298,6 +298,14 @@ header {
 	.core__container {
 		padding: 60px;
 		padding-bottom: 30px;
+
+		@media (max-width:750px) {
+			padding: 30px;
+		}
+
+		@media (max-width:500px) {
+			padding: 10px;
+		}
 	}
 
 	p {
