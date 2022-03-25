@@ -140,13 +140,12 @@
 
 .site-wrapper .header-sticky {
 
-    .logo-light {
-        opacity: 0;
+    .site-branding>.navbar-brand-link {
+        display: none;
     }
 
     .logo-dark {
         opacity: 1;
-        max-height: 25px;
 
     }
 }
@@ -169,8 +168,8 @@
 .site-header .navbar-brand {
     transition: .2s all ease-in-out;
     height: auto;
-    max-height: 89px;
-    max-width: 300px;
+    max-height: 200px;
+    max-width: 320px;
 }
 
 .header-sticky .navbar-brand {
