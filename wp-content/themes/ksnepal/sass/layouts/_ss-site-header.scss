@@ -170,7 +170,7 @@
     transition: .2s all ease-in-out;
     height: auto;
     max-height: 89px;
-    max-width: 79px;
+    max-width: 300px;
 }
 
 .header-sticky .navbar-brand {
@@ -321,7 +321,6 @@
 .site-branding {
     //position: relative;
     width: auto !important;
-    margin: 0 200px 0 15px;
     padding-right: 0 !important;
 
     .logo-light {
@@ -351,7 +350,7 @@
         transform: translate(0%, -50%);
 
         img {
-            max-height: 22px;
+            max-height: 90px;
         }
     }
 }
@@ -581,8 +580,8 @@
 
 @media screen and (max-width: 991px) {
 
-    .site-wrapper .logo-light {
-        opacity: 0 !important;
+    .site-wrapper .site-branding>.navbar-brand-link {
+        display: none;
     }
 
     .site-wrapper .logo-dark {

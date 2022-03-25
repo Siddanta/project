@@ -80,10 +80,6 @@
                                 <div class="link-item"><a href="<?php echo get_the_permalink(); ?>" target="_blank">
                                         <?php echo get_field('ks_nepali_title', get_the_ID()) ? get_field('ks_nepali_title', get_the_ID()) : get_the_title(); ?></a>
                                 </div>
-                                <!-- <div class="link-item"><a href="<?php // echo get_site_url() . "/file-download" 
-                                                                                ?>"
-                                        target="_blank">फाईल डाउनलोड</a></div> -->
-
                                 <?php endforeach; ?>
                             </div>
                             <?php endif; ?>
@@ -95,14 +91,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="site-branding">
-                            <?php the_brand(); ?>
-                            <a class="site-name-logo logo-light" href="<?php echo get_site_url(); ?>"> <img
-                                    src="<?php echo get_site_url(); ?>/wp-content/uploads/2022/03/logo-np.png"
+                            <?php the_brand();
+                            ?>
+                            <!-- <a class="site-name-logo logo-light" href="<?php //echo get_site_url(); 
+                                                                            ?>"> <img
+                                    src="<?php //echo get_site_url(); 
+                                            ?>/wp-content/uploads/2022/03/logo-np.png"
                                     alt="ksn" />
                             </a>
-                            <a class="site-name-logo logo-dark" href="<?php echo get_site_url(); ?>"> <img
-                                    src="<?php echo get_site_url() ?>/wp-content/uploads/2022/03/logo-np-dark.png"
-                                    alt="ksn" />
+                            <a class="site-name-logo logo-dark" href="<?php //echo get_site_url(); 
+                                                                        ?>"> <img
+                                    src="<?php //echo get_site_url() 
+                                            ?>/wp-content/uploads/2022/03/logo-np-dark.png"
+                                    alt="ksn" /> -->
+                            <a class="site-name-logo logo-dark" href="<?php echo get_site_url();
+                                                                        ?>"> <img
+                                    src="http://kshatreesamajnepal.loc/wp-content/uploads/2022/03/png.png" alt="ksn" />
+
+
                             </a>
                         </div>
                         <div class="site-navigation">

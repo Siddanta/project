@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kshatree/public_html/www
+    - export DEPLOYPATH=/home/kshatree/public_html
     - /bin/cp * $DEPLOYPATH
