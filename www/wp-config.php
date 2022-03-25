@@ -71,7 +71,7 @@ $table_prefix = 'ks_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', true);
-
+define('UPLOADS', 'media');
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
