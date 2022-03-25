@@ -9,7 +9,7 @@ get_header();
         <div class=container>
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
-                    <h1>Leadership</h1>
+                    <h1>नेतृत्व</h1>
                     <p>We offer products, solutions, and services across the entire energy value chain. We support our
                         customers
                         on their way to a more sustainable future.</p>
