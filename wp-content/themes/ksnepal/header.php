@@ -36,34 +36,57 @@
                     <div class="row">
                         <div class="header-top-left">
                             <div class="header-top-item">
-                                <span class="icon-phone"></span>
+                                <span class="icon-<?php echo get_field('ks_telephone_icon', 'options') ?>"></span>
                                 <div class="header-top-item-inner">
-                                    <span>फोन:</span>
-                                    <a href="tel:+९७७०६१५२७०१०">०६१-५२७०१०</a>, <a
-                                        href="tel:+९७७०६१५२४३१३">०६१-५२४३१३</a>
+                                    <span><?php echo get_field('ks_telephone_title', 'options') ?>:</span>
+                                    <?php if ($tel = get_field('ks_phone_number', 'options')) { ?>
+                                    <a href="tel:+<?php echo str_replace('-', '', $tel) ?>"><?php echo $tel;
+                                                                                                ?></a>,
+                                    <?php } ?>
+                                    <?php if ($optTel = get_field('ks_optional_phone_number', 'options')) { ?>
+                                    <a href="tel:+<?php echo str_replace('-', '', $optTel) ?>">
+                                        <?php echo $optTel; ?></a>
+                                    <?php } ?>
                                 </div>
                             </div>
                             <div class="header-top-item">
-                                <span class="icon-envelop"></span>
+                                <span class="icon-<?php echo get_field('ks_email_icon', 'options') ?>"></span>
                                 <div class="header-top-item-inner">
-                                    <span>
-                                        इ - मेल:</span>
-                                    <a href="mailto:kshatreesamajnepal53@gmail.com"
-                                        target="_blank">kshatreesamajnepal53@gmail.com</a>
+                                    <span><?php echo get_field('ks_email_title', 'options') ?>:</span>
+                                    <a href="mailto:<?php echo get_field('ks_email', 'options') ?>"
+                                        target="_blank"><?php echo get_field('ks_email', 'options') ?></a></span>
                                 </div>
                             </div>
                         </div>
                         <div class="header-top-right">
                             <div class="site-header-social">
-                                <a title="Facebook" href="#"><span class="icon-facebook"></span></a>
+                                <?php if (have_rows('ks_social_icons', 'options')) { ?>
+                                <?php while (have_rows('ks_social_icons', 'options')) {
+                                        the_row(); ?>
+                                <a
+                                    href="<?php echo get_sub_field('ks_social_icons_link') ? get_sub_field('ks_social_icons_link') : '#' ?>"><span
+                                        class="icon-<?php echo get_sub_field('ks_social_icon') ?>"></span></a>
+                                <?php } ?>
+                                <?php } ?>
+
                             </div>
+                            <?php
+                            $featured_posts = get_field('ks_pages_object', 'options');
+                            if ($featured_posts) :
+                            ?>
                             <div class="header-short-link">
-                                <div class="link-item"><a href="<?php echo get_site_url() . "/program" ?>"
-                                        target="_blank">
-                                        गतिविधि</a></div>
-                                <div class="link-item"><a href="<?php echo get_site_url() . "/file-download" ?>"
-                                        target="_blank">फाईल डाउनलोड</a></div>
+                                <?php foreach ($featured_posts as $post) :
+                                        setup_postdata($post); ?>
+                                <div class="link-item"><a href="<?php echo get_the_permalink(); ?>" target="_blank">
+                                        <?php echo get_field('ks_nepali_title', get_the_ID()) ? get_field('ks_nepali_title', get_the_ID()) : get_the_title(); ?></a>
+                                </div>
+                                <!-- <div class="link-item"><a href="<?php // echo get_site_url() . "/file-download" 
+                                                                                ?>"
+                                        target="_blank">फाईल डाउनलोड</a></div> -->
+
+                                <?php endforeach; ?>
                             </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
