@@ -106,7 +106,8 @@
                                     alt="ksn" /> -->
                             <a class="site-name-logo logo-dark" href="<?php echo get_site_url();
                                                                         ?>"> <img
-                                    src="http://kshatreesamajnepal.loc/wp-content/uploads/2022/03/png.png" alt="ksn" />
+                                    src="<?php echo get_field('ks_mobile_logo', 'options')['url'] ? get_field('ks_mobile_logo', 'options')['url'] : 'http://kshatreesamajnepal.loc/wp-content/uploads/2022/03/png.png' ?>"
+                                    alt="ksn" />
 
 
                             </a>
