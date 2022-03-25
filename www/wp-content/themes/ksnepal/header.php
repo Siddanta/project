@@ -74,11 +74,11 @@
                         <div class="site-branding">
                             <?php the_brand(); ?>
                             <a class="site-name-logo logo-light" href="<?php echo get_site_url(); ?>"> <img
-                                    src="http://kshatreesamajnepal.loc/wp-content/uploads/2022/03/logo-np.png"
+                                    src="<?php echo get_site_url(); ?>/wp-content/uploads/2022/03/logo-np.png"
                                     alt="ksn" />
                             </a>
                             <a class="site-name-logo logo-dark" href="<?php echo get_site_url(); ?>"> <img
-                                    src="http://kshatreesamajnepal.loc/wp-content/uploads/2022/03/logo-np-dark.png"
+                                    src="<?php echo get_site_url() ?>/wp-content/uploads/2022/03/logo-np-dark.png"
                                     alt="ksn" />
                             </a>
                         </div>
