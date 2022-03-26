@@ -20,7 +20,7 @@ function customPostCommittee()
   $args = array(
     'label'   => __('Committee'),
     'description' => __('Committee'),
-    'hierarchical' => false,
+    'hierarchical' => true,
     'labels'            => $labels,
     'public'              => true,
     'hierarchical'        => false,
@@ -29,7 +29,7 @@ function customPostCommittee()
     'show_in_rest' => true,
     'show_in_nav_menus'   => true,
     'show_in_admin_bar'   => true,
-    'has_archive'         => false,
+    'has_archive'         => true,
     'can_export'          => true,
     'exclude_from_search' => false,
     'yarpp_support'       => true,
@@ -40,8 +40,7 @@ function customPostCommittee()
     'rewrite'             => array(
       'slug'            => 'committee',
     ),
-    // 'has_archive'       => true,
-    'supports'            => array('title', 'thumbnail', 'editor', 'excerpt'),
+    'supports'            => array('title', 'thumbnail', 'editor', 'excerpt', 'page-attributes'),
   );
   register_post_type('committee', $args);
 }
@@ -53,29 +52,60 @@ function add_custom_taxonomy()
 {
 
   $labels = array(
-    'name' => _x('Types', 'taxonomy general name'),
-    'singular_name' => _x('Type', 'taxonomy singular name'),
-    'search_items' =>  __('Search Types'),
-    'all_items' => __('All Types'),
+    'name' => _x('Designations', 'taxonomy general name'),
+    'singular_name' => _x('Designation', 'taxonomy singular name'),
+    'search_items' =>  __('Search Designation'),
+    'all_items' => __('All Designations'),
     'parent_item' => __('Parent Type'),
-    'parent_item_colon' => __('Parent Type:'),
-    'edit_item' => __('Edit Type'),
-    'update_item' => __('Update Type'),
-    'add_new_item' => __('Add New Type'),
-    'new_item_name' => __('New Type Name'),
-    'menu_name' => __('Types'),
+    'parent_item_colon' => __('Parent Designation:'),
+    'edit_item' => __('Edit Designation'),
+    'update_item' => __('Update Designation'),
+    'add_new_item' => __('Add New Designation'),
+    'new_item_name' => __('New Designation Name'),
+    'menu_name' => __('Designations'),
   );
 
-  register_taxonomy('level', array('committee'), array(
-    'hierarchical' => true,
+  register_taxonomy('designation', array('committee'), array(
     'labels' => $labels,
+    'hierarchical' => true,
+    'public'  => true,
     'show_ui' => true,
+    'show_in_rest' => true,
     'show_admin_column' => true,
-    'query_var' => true,
-    'rewrite' => array('slug' => 'level'),
+    'show_in_nav_menus'          => true,
+    'show_tagcloud'              => true,
   ));
 }
 add_action('init', 'add_custom_taxonomy');
+
+function add_custom_place_taxonomy()
+{
+
+  $labels = array(
+    'name' => _x('Places', 'taxonomy general name'),
+    'singular_name' => _x('Place', 'taxonomy singular name'),
+    'search_items' =>  __('Search Place'),
+    'all_items' => __('All Places'),
+    'parent_item' => __('Parent Place'),
+    'parent_item_colon' => __('Parent Place:'),
+    'edit_item' => __('Edit Place'),
+    'update_item' => __('Update Place'),
+    'add_new_item' => __('Add New Place'),
+    'new_item_name' => __('New Place Name'),
+    'menu_name' => __('Places'),
+  );
+
+  register_taxonomy('place', array('committee'), array(
+    'labels' => $labels,
+    'hierarchical' => true,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'show_in_rest' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'place'),
+  ));
+}
+add_action('init', 'add_custom_place_taxonomy');
 
 
 
