@@ -1,11 +1,12 @@
 <?php
 /*
-Template Name: News Single
+Template Name: News Single Sample
 */
 get_header();
 ?>
 <section class="inner-banner__alt inner-banner banner bg-cover">
-    <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2020/08/bg-home-page-banner.jpg" alt="services-ppc-banner">
+    <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2020/08/bg-home-page-banner.jpg"
+        alt="services-ppc-banner">
     <div class="inner-banner__altcontent">
         <div class="text-center">
             <h1>क्षत्री समाज नेपालको गण्डकी प्रदेशको अभिवेशनद्वारा नयाँ कार्यसमिति चयन</h1>

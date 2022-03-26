@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: News
+Template Name: News Sample
 */
 get_header();
 ?>

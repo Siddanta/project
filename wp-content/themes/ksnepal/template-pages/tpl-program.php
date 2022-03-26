@@ -5,12 +5,12 @@ Template Name: Program
 get_header();
 ?>
 <section class="inner-banner__alt inner-banner news-part banner bg-cover">
-    <img src="https://preview.lsvr.sk/lore/wp-content/uploads/sites/5/2019/03/knowledge-base-wordpress-theme-header.jpg"
-        alt="services-ppc-banner">
+    <img src="<?php echo get_field('ks_background_image') ? get_field('ks_background_image')['url'] : get_site_url() . '/media/knowledge-base-wordpress-theme-header.jpeg' ?>"
+        alt="<?php echo get_field('ks_background_image', $page_for_posts) ? get_field('ks_background_image', $page_for_posts)['alt'] : 'program-page-banner' ?>">
     <div class="inner-banner__altcontent">
         <div class="container">
             <div class="text-center">
-                <h1>कार्यक्रम</h1>
+                <h1><?php echo get_field('ks_nepali_title') ? get_field('ks_nepali_title') : "" ?> </h1>
                 <div class="breadcrumbs">
                     <?php bcn_display($return = false, $linked = true, $reverse = false, $force = false); ?>
                 </div>

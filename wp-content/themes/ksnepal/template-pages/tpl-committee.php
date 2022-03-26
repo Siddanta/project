@@ -4,15 +4,18 @@ get_header();
 ?>
 
 <section class="inner-banner__alt inner-banner news-part banner bg-cover">
-    <img src="https://demo.farost.net/energia/wp-content/uploads/2021/02/ptt_team.jpg" alt="services-ppc-banner">
+    <?php $image = get_field('ks_background_image'); ?>
+    <img src="<?php echo  $image ? $image['url'] :  get_site_url() . '/media/ptt_team.jpeg' ?>"
+        alt="<?php echo $image ? $image['alt'] : 'banner'; ?>">
     <div class="inner-banner__altcontent">
         <div class=container>
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
-                    <h1>नेतृत्व</h1>
-                    <p>We offer products, solutions, and services across the entire energy value chain. We support our
-                        customers
-                        on their way to a more sustainable future.</p>
+                    <h1><?php echo get_field('ks_background_title') ? get_field('ks_background_title') : 'नेतृत्व'; ?>
+                    </h1>
+                    <?php
+                    echo get_field('ks_background_subtitle') ?
+                        '<p>' . get_field('ks_background_subtitle') . '</p>' : '' ?>
                 </div>
             </div>
         </div>

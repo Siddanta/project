@@ -14,22 +14,22 @@
  */
 
 get_header();
-$id = get_the_ID();
 ?>
+
 <section class="inner-banner__alt inner-banner front-part banner bg-cover">
-    <img src="https://preview.lsvr.sk/lore/wp-content/uploads/sites/5/2019/03/knowledge-base-wordpress-theme-header.jpg"
-        alt="services-ppc-banner">
+    <img src="<?php echo get_field('ks_background_image') ? get_field('ks_background_image')['url'] : get_site_url() . '/media/knowledge-base-wordpress-theme-header.jpeg' ?>"
+        alt="<?php echo get_field('ks_background_image') ? get_field('ks_background_image')['alt'] : 'page-banner' ?>">
     <div class="inner-banner__altcontent">
         <div class="text-center">
-            <h1> क्षत्री समाज नेपाल</h1>
+            <h1><?php echo get_field('ks_background_title') ? get_field('ks_background_title') : 'क्षत्री समाज नेपाल'; ?>
+            </h1>
         </div>
         <div class="text-center">
-            <!-- <h2>“सम्पूर्ण खस क्षेत्रीहरूको सदभावका निम्ति क्षत्री एकता आजको आवश्यकता”</h2> -->
-            <h2>“राष्ट्रिय अखण्डता र जातीय सदभावका निम्ति क्षत्री एकता आजको आवश्यकता”</h2>
+            <h2><?php echo get_field('ks_background_subtitle') ? get_field('ks_background_subtitle') : ''; ?></h2>
         </div>
-
     </div>
 </section>
+
 <section class="introduction-part">
     <div class="container">
         <div class="sub-heading">परीचय</div>
@@ -71,6 +71,14 @@ $id = get_the_ID();
     </div>
 </section>
 
+<?php
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => 6,
+);
+$query = new WP_Query($args);
+if ($query->have_posts()) { ?>
 <section class="news-section meta-link news-section-home">
     <div class="container">
         <div class="box-heading text-center">
@@ -79,14 +87,6 @@ $id = get_the_ID();
         <div class="news-content">
             <div class="news-element news-slider">
                 <?php
-                $args = array(
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'posts_per_page' => 6,
-                );
-                $query = new WP_Query($args);
-
-                if ($query->have_posts()) {
                     while ($query->have_posts()) {
                         $query->the_post(); ?>
                 <div class="mt-4 pl-2 pr-2">
@@ -128,11 +128,8 @@ $id = get_the_ID();
                 </div>
                 <?php
                     }
-                    wp_reset_postdata();
-                }
-                ?>
-
-
+                    wp_reset_query();
+                    ?>
             </div>
             <div class="goto-link">
                 <a href="<?php echo get_site_url() . '/news' ?>" class="hover-underline-out underline-primary">थप
@@ -142,6 +139,8 @@ $id = get_the_ID();
         </div>
     </div>
 </section>
+
+<?php } ?>
 <section class="msg-section msg-home">
     <div class="container">
         <div class="row">
@@ -219,108 +218,50 @@ $id = get_the_ID();
     </div>
 </section>
 
+
+<?php
+$progArgs = array(
+    'post_type' => 'program',
+    'post_status' => 'publish',
+    'posts_per_page' => 6,
+);
+$progQuery = new WP_Query($args);
+if ($query->have_posts()) {
+?>
 <section class="event-activities programs bck-color">
     <div class="container">
         <div class="box-heading text-center">
             <h2 class="h1">कार्यक्रमहरू</h2>
         </div>
+
         <div class="carousel-items">
+            <?php while ($progQuery->have_posts()) {
+                    $progQuery->the_post(); ?>
             <div class="carousel-cell program">
                 <div class="card">
                     <div class="entry-featured">
-                        <img class="card-img-top"
-                            src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image08-370x300.jpg"
-                            alt="Card image cap">
+                        <!-- <img class="card-img-top"
+                            src="<?php ?>"
+                            alt="Card image cap"> -->
+                        <?php
+                                if (has_post_thumbnail())
+                                    echo get_the_post_thumbnail(get_the_ID(), 'program-div');
+                                else
+                                    echo '<img width="370" height="270" src="' . get_site_url() . '/media/content-image-20-370x270.jpeg" class="attachment-news-div size-news-div wp-post-image" alt="">';
+                                ?>
                     </div>
                     <div class="card-body">
-
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of the
-                            card's content.</p>
+                        <h4 class="card-title"><?php echo get_the_title(); ?></h4>
+                        <p class="card-text"><?php echo wp_trim_words(get_the_excerpt(), 15, '[...]'); ?></p>
                         <div class="entry-readmore">
-                            <a class="btn btn-primary">थप हेर्नुहोस् <span class="icon-arrow-right2"></span></a>
+                            <a class="btn btn-primary" href="<?php echo get_the_permalink(); ?>">थप हेर्नुहोस् <span
+                                    class="icon-arrow-right2"></span></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-cell program">
-                <div class="card">
-                    <div class="entry-featured">
-                        <img class="card-img-top"
-                            src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image08-370x300.jpg"
-                            alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of the
-                            card's content.</p>
-                        <div class="entry-readmore">
-                            <a class="btn btn-primary">थप हेर्नुहोस् <span class="icon-arrow-right2"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-cell program">
-                <div class="card">
-                    <div class="entry-featured">
-                        <img class="card-img-top"
-                            src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image08-370x300.jpg"
-                            alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of the
-                            card's content.</p>
-                        <div class="entry-readmore">
-                            <a class="btn btn-primary">थप हेर्नुहोस् <span class="icon-arrow-right2"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-cell program">
-                <div class="card">
-                    <div class="entry-featured">
-                        <img class="card-img-top"
-                            src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image08-370x300.jpg"
-                            alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of the
-                            card's content.</p>
-                        <div class="entry-readmore">
-                            <a class="btn btn-primary">थप हेर्नुहोस् <span class="icon-arrow-right2"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-cell program">
-                <div class="card">
-                    <div class="entry-featured">
-                        <img class="card-img-top"
-                            src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image08-370x300.jpg"
-                            alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the bulk of the
-                            card's content.</p>
-                        <div class="entry-readmore">
-                            <a class="btn btn-primary">थप हेर्नुहोस् <span class="icon-arrow-right2"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
+            <?php wp_reset_postdata(); ?>
         </div>
 
         <div class="goto-link">
@@ -330,6 +271,8 @@ $id = get_the_ID();
         </div>
     </div>
 </section>
+
+<?php } ?>
 
 <section class="testimonials programs">
     <div class="elementor-background-overlay"></div>

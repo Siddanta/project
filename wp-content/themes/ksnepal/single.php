@@ -10,7 +10,9 @@
 get_header();
 ?>
 <section class="inner-banner__alt inner-banner news-part banner bg-cover">
-    <img src="https://demo.farost.net/energia/wp-content/uploads/2021/02/ptt_team.jpg" alt="services-ppc-banner">
+    <?php $image = get_field('ks_background_image'); ?>
+    <img src="<?php echo  $image ? $image['url'] :  get_site_url() . '/media/ptt_team.jpeg' ?>"
+        alt="<?php echo $image ? $image['alt'] : 'banner'; ?>">
     <!-- <div class="inner-banner__altcontent">
         <div class="text-center">
             <h1><?php //echo get_the_title(); 

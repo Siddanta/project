@@ -31,9 +31,9 @@
 
     <div class="post__thumbnail news-single-slider">
         <?php the_post_thumbnail('full'); ?>
-        <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2021/04/content-image-20.jpeg" />
-        <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2021/04/content-image-20.jpeg" />
-        <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2021/04/content-image-20.jpeg" />
+        <img src="<?php echo get_site_url(); ?>/media/content-image-20.jpeg" />
+        <img src="<?php echo get_site_url(); ?>/media/content-image-20.jpeg" />
+        <img src="<?php echo get_site_url(); ?>/media/content-image-20.jpeg" />
     </div>
 
 
@@ -60,7 +60,7 @@
     </div>
     <div class="entry-social site-header-social">
         Share:
-        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>" target="_blank">
             <span class="icon-facebook"></span>
         </a>
 

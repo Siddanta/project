@@ -38,7 +38,7 @@ get_header();
                             <?php echo wp_trim_words(get_the_excerpt(), 20, '[...]') ?></div>
                     </div>
                     <div class="box-button">
-                        <a class="btn"
+                        <a class="btn" target="_blank"
                             href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>">
                             Share: <span class="icon-facebook2"></span></i>
                         </a>
@@ -82,9 +82,9 @@ get_header();
                                         <div class="widget-wrap">
                                             <div class="widget-container">
                                                 <div class="text-editor clearfix">
-                                                    <p><span class="head-text">Chief Guest:</span>
+                                                    <p><span class="head-text">प्रमुख अतिथि:</span>
                                                         Farost Network<br>
-                                                        <span class="head-text">Location:</span>
+                                                        <span class="head-text">कार्यक्रम थान:</span>
                                                         Gaighat, Nepal<br>
                                                     </p>
                                                 </div>
