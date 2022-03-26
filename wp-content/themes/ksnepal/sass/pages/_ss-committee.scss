@@ -42,7 +42,7 @@
 }
 
 .card__body {
-    padding: 24px 40px;
+    padding: 24px 26px;
     -webkit-border-radius: 0 0 8px 8px;
     -khtml-border-radius: 0 0 8px 8px;
     -moz-border-radius: 0 0 8px 8px;
@@ -149,7 +149,10 @@
 }
 
 .sub-comm {
-    padding: 10px;
+
+    @media (min-width:470px) {
+        padding: 10px;
+    }
 
     .custom-subheading {
         margin-bottom: 7px;
@@ -175,7 +178,9 @@
     }
 
     .comm-inner {
-        padding: 15px;
+        @media (min-width:470px) {
+            padding: 15px;
+        }
 
         h2 button {
             font-size: 17px;

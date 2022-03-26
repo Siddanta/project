@@ -40,7 +40,7 @@ get_header();
                     <div class="committee_row">
 
                         <div class="committee_inner row">
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div class="card__inner">
                                     <div class="item_image">
                                         <img class="card-img-top"
@@ -62,7 +62,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div class="card__inner">
                                     <div class="item_image">
                                         <img class="card-img-top"
@@ -84,7 +84,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div class="card__inner">
                                     <div class="item_image">
                                         <img class="card-img-top"
@@ -106,7 +106,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div class="card__inner">
                                     <div class="item_image">
                                         <img class="card-img-top"
