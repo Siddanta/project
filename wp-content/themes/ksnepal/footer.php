@@ -55,7 +55,7 @@ use YoastSEO_Vendor\GuzzleHttp\Promise\Is;
                 </div>
 
                 <div class="col-md-4 text-left">
-                    <h3><?php echo get_field('ks_column_two_title', 'options') ? get_field('ks_column_two_title', 'options') : '' ?>
+                    <h3><?php echo get_field('ks_column_three_title', 'options') ? get_field('ks_column_three_title', 'options') : '' ?>
                     </h3>
                     <ul class="footer-list">
                         <li><span class="icon-<?php echo get_field('ks_location_info_icon', 'options') ?>"> </span>
