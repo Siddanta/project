@@ -99,7 +99,7 @@ $id = get_the_ID();
                                                 if (has_post_thumbnail())
                                                     echo get_the_post_thumbnail(get_the_ID(), 'news-div');
                                                 else
-                                                    echo '<img width="370" height="270" src="http://kshatreesamajnepal.loc/wp-content/uploads/2021/04/content-image-20-370x270.jpeg" class="attachment-news-div size-news-div wp-post-image" alt="">';
+                                                    echo '<img width="370" height="270" src="' . get_site_url() . '/media/content-image-20-370x270.jpeg" class="attachment-news-div size-news-div wp-post-image" alt="">';
                                                 ?>
                                     </a>
                                 </div>

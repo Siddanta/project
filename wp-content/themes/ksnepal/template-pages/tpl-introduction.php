@@ -12,7 +12,7 @@ get_header();
     <div class="inner-banner__altcontent">
         <div class="text-center">
 
-            <h1><?php echo get_field('ks_nepali_title'); ?></h1>
+            <h1><?php echo get_field('ks_nepali_title') ? get_field('ks_nepali_title') : get_the_title(); ?></h1>
             <p>
             <div class="breadcrumbs">
                 <?php bcn_display($return = false, $linked = true, $reverse = false, $force = false); ?>
@@ -26,8 +26,10 @@ get_header();
         <div class="news__container">
             <div class="core__container">
                 <div class="news-sub">
-                    <h2 class="h1"><?php echo get_field('ks_nepali_title'); ?></h2>
-                    <p>मान्छेले आफ्ना मातापितासरह कसैलाई माया गर्छ भने त्यो हो-जन्मभूमि । यसअनुसार म आफ्नो जन्मभूमिलाई
+                    <h2 class="h1">
+                        <?php echo get_field('ks_nepali_title') ? get_field('ks_nepali_title') : get_the_title();; ?>
+                    </h2>
+                    <?php echo get_the_content() ? get_the_content() : '<p>मान्छेले आफ्ना मातापितासरह कसैलाई माया गर्छ भने त्यो हो-जन्मभूमि । यसअनुसार म आफ्नो जन्मभूमिलाई
                         मातृभूमि मात्र होइन, आफ्नो गौरव पनि मान्छु, किनभने म यस माटोमा जन्मेँ । यस माटोमा हुर्के।</p>
                     <p>मान्छेले आफ्ना मातापितासरह कसैलाई माया गर्छ भने त्यो हो-जन्मभूमि । यसअनुसार म आफ्नो जन्मभूमिलाई
                         मातृभूमि मात्र होइन, आफ्नो गौरव पनि मान्छु, किनभने म यस माटोमा जन्मेँ । यस माटोमा हुकैँ । हुन त
@@ -53,7 +55,8 @@ get_header();
                         सक्छु र ? अहिले म जुन स्थितिमा छु सन्तोक छ । यो सन्तोकप्राप्ति यदि म आफ्नो जन्मभूमिमा नजन्मिएको
                         भए पाउँदै हुँला र ? मेरो जन्मभूमि साँच्चै मेरो गौरव हो ।
 
-                    </p>
+                    </p>'; ?>
+
                 </div>
             </div>
         </div>
