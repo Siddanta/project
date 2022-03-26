@@ -35,15 +35,24 @@ get_header();
                             </div>
                             <div class="image-section">
                                 <div class="img-inner">
-                                    <img class="lb-image"
+                                    <!-- <img class="lb-image"
                                         src="http://kshatreesamajnepal.loc/wp-content/uploads/2022/03/photo-350x487.jpg"
-                                        alt="">
+                                        alt=""> -->
+
+                                    <?php if (has_post_thumbnail()) {
+
+                                        the_post_thumbnail('message');
+                                    } else { ?>
+
+                                    <img class="lb-image"
+                                        src="<?php echo get_field('ks_committee_member_optional_image', 'options')['sizes']['message'] ?>"
+                                        alt="<?php echo get_field('ks_committee_member_optional_image', 'options')['alt']; ?>">
+                                    <?php } ?>
                                     <div class="designation-inner">
-                                        <h4><?php echo get_field('ks_nepali_title'); ?></h4>
-                                        <p>महासचिव</p>
+                                        <h1 class="h4"><?php echo get_field('ks_nepali_title'); ?></h1>
+                                        <?php echo get_field('ks_committee_designation') ? '<p>' . get_field('ks_committee_designation') . '</p>' : '' ?>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

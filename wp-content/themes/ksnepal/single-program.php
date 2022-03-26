@@ -84,7 +84,7 @@ get_header();
                                                 <div class="text-editor clearfix">
                                                     <p><span class="head-text">प्रमुख अतिथि:</span>
                                                         Farost Network<br>
-                                                        <span class="head-text">कार्यक्रम थान:</span>
+                                                        <span class="head-text">कार्यक्रम स्थान:</span>
                                                         Gaighat, Nepal<br>
                                                     </p>
                                                 </div>
