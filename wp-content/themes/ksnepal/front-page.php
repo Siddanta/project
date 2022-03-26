@@ -508,54 +508,56 @@ if ($query->have_posts()) {
 </section>
 
 <section class="image-activities event-activities">
-    <div class="box-heading text-center">
-        <h2 class="h1">Gallery</h2>
-    </div>
-    <div class="image-slider">
-        <div class="image-single">
-            <a class="light-box" data-lightbox="image-1" data-title="My caption"
-                href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
-                <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
-                    alt="Card image cap">
-            </a>
+    <div class="container">
+        <div class="box-heading text-center">
+            <h2 class="h1">Gallery</h2>
         </div>
+        <div class="image-slider">
+            <div class="image-single">
+                <a class="light-box" data-lightbox="image-1" data-title="My caption"
+                    href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
+                    <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
+                        alt="Card image cap">
+                </a>
+            </div>
 
-        <div class="image-single">
-            <a class="light-box" data-lightbox="image-1" data-title="My caption"
-                href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
-                <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
-                    alt="Card image cap">
-            </a>
-        </div>
+            <div class="image-single">
+                <a class="light-box" data-lightbox="image-1" data-title="My caption"
+                    href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
+                    <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
+                        alt="Card image cap">
+                </a>
+            </div>
 
 
-        <div class="image-single">
-            <a class="light-box" data-lightbox="image-1" data-title="My caption"
-                href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
-                <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
-                    alt="Card image cap">
-            </a>
-        </div>
+            <div class="image-single">
+                <a class="light-box" data-lightbox="image-1" data-title="My caption"
+                    href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
+                    <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
+                        alt="Card image cap">
+                </a>
+            </div>
 
-        <div class="image-single">
-            <a class="light-box" data-lightbox="image-1" data-title="My caption"
-                href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
-                <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
-                    alt="Card image cap">
-            </a>
+            <div class="image-single">
+                <a class="light-box" data-lightbox="image-1" data-title="My caption"
+                    href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
+                    <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
+                        alt="Card image cap">
+                </a>
+            </div>
+            <div class="image-single">
+                <a class="light-box" data-lightbox="image-1" data-title="My caption"
+                    href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
+                    <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
+                        alt="Card image cap">
+                </a>
+            </div>
         </div>
-        <div class="image-single">
-            <a class="light-box" data-lightbox="image-1" data-title="My caption"
-                href="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg" tabindex="-1">
-                <img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/energia_image12.jpg"
-                    alt="Card image cap">
-            </a>
+        <div class="goto-link">
+            <a href="<?php echo get_site_url() . '/gallery' ?>" class="hover-underline-out underline-primary">थप
+                फोटोहरू
+                हेर्नुहोस्</a>
         </div>
-    </div>
-    <div class="goto-link">
-        <a href="<?php echo get_site_url() . '/gallery' ?>" class="hover-underline-out underline-primary">थप
-            फोटोहरू
-            हेर्नुहोस्</a>
     </div>
 </section>
 

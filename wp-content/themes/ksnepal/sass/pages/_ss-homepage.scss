@@ -129,6 +129,10 @@
             overflow: hidden;
             margin-bottom: 0;
             position: relative;
+
+            img {
+                width: 100%;
+            }
         }
 
         .card-body {

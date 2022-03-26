@@ -238,7 +238,7 @@ var ss;
 							dots: true
 						}
 					}, {
-						breakpoint: 700,
+						breakpoint: 768,
 						settings: {
 							arrows: false,
 							slidesToShow: 1,
@@ -257,8 +257,8 @@ var ss;
 					nextArrow: '<button type="button" class="slick-next work-block__next work-block__btn"><span class="icon-arrow-right2"></span></button>',
 					dots: true,
 					infinite: true,
-					centerMode: true,
-					centerPadding: '120px',
+					// centerMode: true,
+					// centerPadding: '130px',
 					//autoplay: true,
 					autoplaySpeed: 2000,
 					adaptiveHeight: true,
@@ -267,8 +267,8 @@ var ss;
 						breakpoint: 768,
 						settings: {
 							slidesToShow: 2,
-							centerMode: true,
-							centerPadding: '70px',
+							// centerMode: true,
+							// centerPadding: '80px',
 							slidesToScroll: 1,
 							dots: true
 						}
