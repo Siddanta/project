@@ -89,7 +89,7 @@ if ($query->have_posts()) { ?>
                 <?php
                     while ($query->have_posts()) {
                         $query->the_post(); ?>
-                <div class="mt-4 pl-2 pr-2">
+                <div class="pl-2 pr-2">
                     <div class="news-item same-height">
                         <div class=news-single-item>
                             <div class="news-item__img">
@@ -225,7 +225,7 @@ $progArgs = array(
     'post_status' => 'publish',
     'posts_per_page' => 6,
 );
-$progQuery = new WP_Query($args);
+$progQuery = new WP_Query($progArgs);
 if ($query->have_posts()) {
 ?>
 <section class="event-activities programs bck-color">
@@ -238,7 +238,7 @@ if ($query->have_posts()) {
             <?php while ($progQuery->have_posts()) {
                     $progQuery->the_post(); ?>
             <div class="carousel-cell program">
-                <div class="card">
+                <div class="card same-height">
                     <div class="entry-featured">
                         <!-- <img class="card-img-top"
                             src="<?php ?>"
@@ -433,7 +433,7 @@ if ($query->have_posts()) {
         <img src="http://kshatreesamajnepal.loc/wp-content/uploads/2021/04/pexels-alena-koval-961402-scaled.jpg"
             alt=" img" />
         <div class="container text-center">
-            <h2 class="h1">हार्दिक श्रद्धांजली</h2>
+            <h2 class="h1 box-heading">हार्दिक श्रद्धांजली</h2>
             <img class="card-img-top"
                 src="http://kshatreesamajnepal.loc/wp-content/uploads/2020/03/advance-package-bg.jpg"
                 alt="Card image cap">

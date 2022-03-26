@@ -328,6 +328,10 @@
     font-size: 37px;
     line-height: 1.46;
     color: #2b3e4b;
+
+    @media (max-width:539px) {
+        font-size: 27px;
+    }
 }
 
 .site-header .navbar {

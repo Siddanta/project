@@ -108,16 +108,9 @@
 }
 
 .box-heading {
-
-
-    margin: 0% 30% 0% 30%;
     max-width: 25rem;
     margin: 0 auto 1rem;
-
-    // h2 {
-    //     margin-top: 0px;
-    //     margin-bottom: 15px;
-    // }
+    margin-bottom: 30px;
 }
 
 .event-activities {
@@ -338,6 +331,18 @@ h2 {
 
         h2 {
             font-size: 1.7rem;
+        }
+    }
+
+    @media (max-width: 340px) {
+        padding: 2rem 1.5rem;
+
+        h1 {
+            font-size: 2.1rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
         }
     }
 }
