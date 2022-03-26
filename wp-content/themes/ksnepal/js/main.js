@@ -87,9 +87,10 @@ var ss;
 						$('#nav-pri').hide()
 						$('#nav-pri > .site-tool').remove()
 					} else {
-						$('#nav-pri').append(
-							"<div class='site-tool'><div class='site-header-item site-header-button'><a class='btn' href='http://kshatreesamajnepal.loc/contact-us/' target='_self' title='Request A Quote <i class=&quot;fas fac-arrow-right&quot;></i>'>सम्पर्क गर्नुहोस <span class='icon-arrow-right2'></span> </a></div></div>"
-						)
+						// var pageOrigin = document.location.origin;
+						// $('#nav-pri').append(
+						// 	"<div class='site-tool'><div class='site-header-item site-header-button'><a class='btn' href='" + pageOrigin + "/contact-us/' target='_self' title='Request A Quote <i class=&quot;fas fac-arrow-right&quot;></i>'>सम्पर्क गर्नुहोस <span class='icon-arrow-right2'></span> </a></div></div>"
+						// )
 						$('#nav-pri').show()
 					}
 				});
@@ -158,6 +159,14 @@ var ss;
 						settings: {
 							arrows: false,
 							slidesToShow: 1,
+							slidesToScroll: 1,
+							dots: true
+						}
+					}, {
+						breakpoint: 992,
+						settings: {
+							arrows: false,
+							slidesToShow: 2,
 							slidesToScroll: 1,
 							dots: true
 						}
