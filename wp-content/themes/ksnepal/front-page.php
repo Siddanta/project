@@ -275,114 +275,115 @@ if ($query->have_posts()) {
 <?php } ?>
 
 <section class="testimonials programs">
-    <div class="elementor-background-overlay"></div>
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-row">
-            <div class="elementor-column elementor-col-100">
-                <div class="elementor-column-wrap  elementor-element-populated">
-                    <div class="testimonial-widget elementor-widget-wrap">
-                        <div class="elementor-element">
-                            <div class="elementor-widget-container">
-                                <div class="testimonial-slider">
-                                    <div class="cms-client-wrapper">
-                                        <div class="client-content">
-                                            <div class="client-image">
-                                                <img width="100" height="100"
-                                                    src="https://demo.farost.net/energia/wp-content/uploads/2021/02/avatar11.jpg"
-                                                    class="attachment-thumbnail size-thumbnail" alt="avatar">
-                                            </div>
-                                            <div class="right-content">
-                                                <h4 class="said">“They were fantastic through the entire purchase
-                                                    process.
-                                                    Had
-                                                    lots
-                                                    of
-                                                    questions
-                                                    and
-                                                    they
-                                                    were
-                                                    patient. When my system arrived, it was well packed and shipping
-                                                    done
-                                                    smoothly
-                                                    with
-                                                    xpo.”
-                                                </h4>
-                                                <div class="name-job">
-                                                    <div class="client-name">
-                                                        <h5 class="name-text">Martin Hope,</h5>
-                                                    </div>
-                                                    <div class="client-job">
-                                                        <p>Pro Systems Founder</p>
+    <div class="container">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-row">
+                <div class="elementor-column elementor-col-100">
+                    <div class="elementor-column-wrap  elementor-element-populated">
+                        <div class="testimonial-widget elementor-widget-wrap">
+                            <div class="elementor-element">
+                                <div class="elementor-widget-container">
+                                    <div class="testimonial-slider">
+                                        <div class="cms-client-wrapper">
+                                            <div class="client-content">
+                                                <div class="client-image">
+                                                    <img width="100" height="100"
+                                                        src="https://demo.farost.net/energia/wp-content/uploads/2021/02/avatar11.jpg"
+                                                        class="attachment-thumbnail size-thumbnail" alt="avatar">
+                                                </div>
+                                                <div class="right-content">
+                                                    <h4 class="said">“They were fantastic through the entire purchase
+                                                        process.
+                                                        Had
+                                                        lots
+                                                        of
+                                                        questions
+                                                        and
+                                                        they
+                                                        were
+                                                        patient. When my system arrived, it was well packed and shipping
+                                                        done
+                                                        smoothly
+                                                        with
+                                                        xpo.”
+                                                    </h4>
+                                                    <div class="name-job">
+                                                        <div class="client-name">
+                                                            <h5 class="name-text">Martin Hope,</h5>
+                                                        </div>
+                                                        <div class="client-job">
+                                                            <p>Pro Systems Founder</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="cms-client-wrapper">
-                                        <div class="client-content">
-                                            <div class="client-image">
-                                                <img width="100" height="100"
-                                                    src="https://demo.farost.net/energia/wp-content/uploads/2021/02/avatar11.jpg"
-                                                    class="attachment-thumbnail size-thumbnail" alt="avatar">
-                                            </div>
-                                            <div class="right-content">
-                                                <h4 class="said">“They were fantastic through the entire purchase
-                                                    process.
-                                                    Had
-                                                    lots
-                                                    of
-                                                    questions
-                                                    and
-                                                    they
-                                                    were
-                                                    patient. When my system arrived, it was well packed and shipping
-                                                    done
-                                                    smoothly
-                                                    with
-                                                    xpo.”
-                                                </h4>
-                                                <div class="name-job">
-                                                    <div class="client-name">
-                                                        <h5 class="name-text">Martin Hope,</h5>
-                                                    </div>
-                                                    <div class="client-job">
-                                                        <p>Pro Systems Founder</p>
+                                        <div class="cms-client-wrapper">
+                                            <div class="client-content">
+                                                <div class="client-image">
+                                                    <img width="100" height="100"
+                                                        src="https://demo.farost.net/energia/wp-content/uploads/2021/02/avatar11.jpg"
+                                                        class="attachment-thumbnail size-thumbnail" alt="avatar">
+                                                </div>
+                                                <div class="right-content">
+                                                    <h4 class="said">“They were fantastic through the entire purchase
+                                                        process.
+                                                        Had
+                                                        lots
+                                                        of
+                                                        questions
+                                                        and
+                                                        they
+                                                        were
+                                                        patient. When my system arrived, it was well packed and shipping
+                                                        done
+                                                        smoothly
+                                                        with
+                                                        xpo.”
+                                                    </h4>
+                                                    <div class="name-job">
+                                                        <div class="client-name">
+                                                            <h5 class="name-text">Martin Hope,</h5>
+                                                        </div>
+                                                        <div class="client-job">
+                                                            <p>Pro Systems Founder</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="cms-client-wrapper">
-                                        <div class="client-content">
-                                            <div class="client-image">
-                                                <img width="100" height="100"
-                                                    src="https://demo.farost.net/energia/wp-content/uploads/2021/02/avatar11.jpg"
-                                                    class="attachment-thumbnail size-thumbnail" alt="avatar">
-                                            </div>
-                                            <div class="right-content">
-                                                <h4 class="said">“They were fantastic through the entire purchase
-                                                    process.
-                                                    Had
-                                                    lots
-                                                    of
-                                                    questions
-                                                    and
-                                                    they
-                                                    were
-                                                    patient. When my system arrived, it was well packed and shipping
-                                                    done
-                                                    smoothly
-                                                    with
-                                                    xpo.”
-                                                </h4>
-                                                <div class="name-job">
-                                                    <div class="client-name">
-                                                        <h5 class="name-text">Martin Hope,</h5>
-                                                    </div>
-                                                    <div class="client-job">
-                                                        <p>Pro Systems Founder</p>
+                                        <div class="cms-client-wrapper">
+                                            <div class="client-content">
+                                                <div class="client-image">
+                                                    <img width="100" height="100"
+                                                        src="https://demo.farost.net/energia/wp-content/uploads/2021/02/avatar11.jpg"
+                                                        class="attachment-thumbnail size-thumbnail" alt="avatar">
+                                                </div>
+                                                <div class="right-content">
+                                                    <h4 class="said">“They were fantastic through the entire purchase
+                                                        process.
+                                                        Had
+                                                        lots
+                                                        of
+                                                        questions
+                                                        and
+                                                        they
+                                                        were
+                                                        patient. When my system arrived, it was well packed and shipping
+                                                        done
+                                                        smoothly
+                                                        with
+                                                        xpo.”
+                                                    </h4>
+                                                    <div class="name-job">
+                                                        <div class="client-name">
+                                                            <h5 class="name-text">Martin Hope,</h5>
+                                                        </div>
+                                                        <div class="client-job">
+                                                            <p>Pro Systems Founder</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
