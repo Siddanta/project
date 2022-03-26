@@ -7,6 +7,7 @@ get_header();
         alt="<?php echo $image ? $image['alt'] : 'banner'; ?>">
     <div class="inner-banner__altcontent">
         <div class="text-center">
+            <h1><?php echo get_field('ks_nepali_title') ?></h1>
             <p>
             <div class="breadcrumbs">
                 <?php bcn_display($return = false, $linked = true, $reverse = false, $force = false); ?>
@@ -49,7 +50,7 @@ get_header();
                                         alt="<?php echo get_field('ks_committee_member_optional_image', 'options')['alt']; ?>">
                                     <?php } ?>
                                     <div class="designation-inner">
-                                        <h1 class="h4"><?php echo get_field('ks_nepali_title'); ?></h1>
+                                        <h4><?php echo get_field('ks_nepali_title'); ?></h4>
                                         <?php echo get_field('ks_committee_designation') ? '<p>' . get_field('ks_committee_designation') . '</p>' : '' ?>
                                     </div>
                                 </div>
