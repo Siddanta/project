@@ -1,3 +1,6 @@
+<?php if (is_page('gallery')) { ?>
+<?php } else { ?>
+
 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
     <div class="card__inner">
         <div class="item_image">
@@ -6,8 +9,8 @@
                 <?php } ?>
                 <?php if (has_post_thumbnail()) {
 
-                    the_post_thumbnail('message');
-                } else { ?>
+                        the_post_thumbnail('message');
+                    } else { ?>
 
                 <img class="lb-image"
                     src="<?php echo get_field('ks_committee_member_optional_image', 'options')['sizes']['message'] ?>"
@@ -39,3 +42,5 @@
         <?php } ?>
     </div>
 </div>
+
+<?php } ?>
