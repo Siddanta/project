@@ -302,6 +302,7 @@ add_image_size('program-archive', '790', '526', true);
 add_image_size('program-single', '1170', '600', true);
 add_image_size('message', '350', '487', true);
 add_image_size('gallery-small', '448', '299', true);
+add_image_size('committee-mem', '243', '312', true);
 
 
 class Ss_Recent_Posts_Widget extends WP_Widget_Recent_Posts

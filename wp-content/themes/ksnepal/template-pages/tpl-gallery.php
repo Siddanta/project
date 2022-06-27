@@ -24,16 +24,18 @@ get_header();
         </figure>
         <?php } else {
                     $video = get_sub_field('ks_Video_file');
+                    $posterImage = get_sub_field('ks_poster_image');
+                    //var_dump($video);
                 ?>
         <figure class="col-md-4" style="align-self: center">
             <video id="my-player" class="video-js vjs-fill vjs-big-play-centered" controls preload="auto"
-                poster="//vjs.zencdn.net/v/oceans.png" data-setup='{}'>
-                <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                poster="<?php echo  $posterImage ? $posterImage['url'] : ''; ?>" data-setup='{}'>
+                <source src="<?php echo $video['url']; ?>" type="video/mp4">
                 </source>
-                <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                <!-- <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
                 </source>
                 <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
-                </source>
+                </source> -->
             </video>
         </figure>
         <?php } ?>

@@ -9,9 +9,8 @@
                 <?php } ?>
                 <?php if (has_post_thumbnail()) {
 
-                        the_post_thumbnail('message');
+                        the_post_thumbnail('committee-mem');
                     } else { ?>
-
                 <img class="lb-image"
                     src="<?php echo get_field('ks_committee_member_optional_image', 'options')['sizes']['message'] ?>"
                     alt="<?php echo get_field('ks_committee_member_optional_image', 'options')['alt']; ?>">
