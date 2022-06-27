@@ -1,5 +1,4 @@
 <?php
-/* Template Name: Members */
 get_header();
 ?>
 
@@ -39,192 +38,18 @@ get_header();
         <div class="committee__wrap">
             <div class="container">
                 <div class="main__committee">
-                    <h2>क्षत्री समाज नेपाल नयाँ केन्द्रीय कार्यसमिति</h2>
+                    <h2>क्षत्री समाज नेपाल केन्द्रीय कार्यसमिति</h2>
                     <div class="committee_row">
-
-                        <div class="committee_inner row">
-                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_04.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_05.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_06.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_07.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_04.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_05.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_06.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                <div class="card__inner">
-                                    <div class="item_image">
-                                        <img class="card-img-top"
-                                            src="https://demo.farost.net/energia/wp-content/uploads/2021/02/team_07.jpg"
-                                            alt="members" />
-                                    </div>
-
-                                    <div class="card__body bck_overlap">
-                                        <div class="context__text text-center">
-                                            <h3 class="item-title">केश बहादुर के.सी.</h3>
-                                            <div class="item-position">महासचिव</div>
-                                        </div>
-                                        <div class="content_social bck_overlap">
-                                            <div class="item-social">
-                                                <a href="#"><span class="icon-facebook"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                        echo do_shortcode('[ajax_load_more container_type="div" css_classes="row" post_type="committee" posts_per_page="20"  taxonomy="place" taxonomy_terms="central" transition_container="false" images_loaded="true" scroll="false" button_label="थप हेर्नुहोस्" orderby="menu order" order="ASC]');
+                        ?>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="comm-wrap sub-comm">
+
+        <!-- <div class="comm-wrap sub-comm">
             <div class="container">
                 <div class="sub-comm-title text-center">
                     <div class="custom-subheading">क्षत्री समाज नेपाल</div>
@@ -482,7 +307,7 @@ get_header();
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <?php

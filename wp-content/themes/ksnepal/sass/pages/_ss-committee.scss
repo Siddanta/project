@@ -100,6 +100,16 @@
 
 .card__inner {
     margin-bottom: 30px;
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.01);
+        }
+    }
 }
 
 .card__inner .item_image {
@@ -126,9 +136,9 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 40px;
+    height: 45px;
     position: absolute;
-    top: -40px;
+    top: -33px;
     left: 0;
     right: 0;
     opacity: 0;
