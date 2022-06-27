@@ -1,15 +1,23 @@
-# Translation of WordPress - 5.9.x - Development - Administration - Network Admin in Nepali
-# This file is distributed under the same license as the WordPress - 5.9.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 6.0.x - Development - Administration - Network Admin in Nepali
+# This file is distributed under the same license as the WordPress - 6.0.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-02-12 14:58:10+0000\n"
+"PO-Revision-Date: 2022-05-25 16:24:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
 "Language: ne_NP\n"
-"Project-Id-Version: WordPress - 5.9.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 6.0.x - Development - Administration - Network Admin\n"
+
+#: wp-admin/network/upgrade.php:141
+msgid "WordPress has been updated! Next and final step is to individually upgrade the sites in your network."
+msgstr "वर्डप्रेस नविनीकरण भएको छ । तपाईलाई अघि बढ्न दिनुभन्दा पहिले , हामीले तपाईको संजालको प्रत्येक साईटसहरुलाई पदोन्नति गर्न आवश्यक छ ।"
+
+#: wp-admin/network/site-new.php:40
+msgid "Cannot create an empty site."
+msgstr "खाली साइट बनाउन सकिँदैन।"
 
 #. translators: %s: wp-config.php
 #: wp-admin/includes/network.php:463
@@ -725,10 +733,6 @@ msgstr "यहाँदेखि तपाईले गर्नुसक्न�
 msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 msgstr "तपाईको संजाल प्रशासकमा तपाईलाई स्वागत छ । यस प्रशासकीय स्क्रीनहरुको क्षेत्र तपाईको मल्टीसाईट संजाल व्यवस्थापन गर्न प्रयोग हुनेछ ।"
 
-#: wp-admin/network/upgrade.php:141
-msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
-msgstr "वर्डप्रेस नविनीकरण भएको छ । तपाईलाई आफ्ऩो बाटो जान दिनु अघि, हामीले तपाईको संजालको प्रत्येक साईटसहरुलाई पदोन्नति गर्न आवश्यक छ ।"
-
 #: wp-admin/network/upgrade.php:24
 msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
 msgstr "यो स्क्रिनको प्रयोग तब मात्र गर्नुहोस जब तपाईंले (नेटवर्क प्रशासन मेनुबाट) वर्डप्रेसलाई अद्यावधिक गर्नु हुन्छ । तपाइंले नेटवर्क अद्यावधिक बटन क्लिक गरे पछि नेटवर्कको प्रत्येक साइटमा क्रमश काम हुन्छ, एक पल्टमा पांच ओटा, अनि डाटाबेस अद्यावधिक सुनिस्चित गर्छ ।"
@@ -1129,8 +1133,8 @@ msgid "If this process fails for any reason, users logging in to their sites wil
 msgstr "यदि यो प्रक्रिया कुनै पनि कारणले विफल भयो, भने साइटहरुमा लगईन् गरेका उपयोगकर्ताहरुलाई पनि मजबूरीले यहि अपडेटको साथ चल्न पर्नेछ।"
 
 #: wp-admin/network/upgrade.php:25
-msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
-msgstr "यदि कोर को संस्करण अपडेट भएको छैन, भने यस बटनमा क्लिक गरेपनि कुनै प्रभाव हुने छैन।"
+msgid "If a version update to core has not happened, clicking this button will not affect anything."
+msgstr "यदि कोर को संस्करण अपडेट भएको छैन भने, यस बटनमा क्लिक गरेपनि कुनै प्रभाव पर्ने छैन।"
 
 #: wp-admin/network/themes.php:301
 msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
@@ -1166,7 +1170,7 @@ msgid "The following words are reserved for use by WordPress functions and canno
 msgstr "यी निम्न शब्दहरु वर्डप्रेस फङ्कशनहरुको प्रयोजनको लागि रिजर्भ गरिएको छ र साइटको नामहरुको निम्ति प्रयोग गर्न सकिने छैन : %s"
 
 #: wp-admin/network/upgrade.php:125
-msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
+msgid "If your browser does not start loading the next page automatically, click this link:"
 msgstr "यदि तपाईको ब्राउजरले स्वत: अर्को पृष्ठ खोल्न शुरु गरेन भने, यो लिंकमा थिच्नुहोस् :"
 
 #: wp-admin/network/settings.php:302
@@ -1176,10 +1180,6 @@ msgstr "यदि तपाईलाई डोमेनहरु साईट �
 #: wp-admin/network/settings.php:282
 msgid "If you want to limit site registrations to certain domains. One domain per line."
 msgstr "यदि तपाईलाई केहि डोमेनहरमा मात्र साईट दर्ता सिमित राख्नु छ भने । प्रति लाईन एक डोमेन ।"
-
-#: wp-admin/network/site-new.php:40
-msgid "Can&#8217;t create an empty site."
-msgstr "खाली साईट सृजना गर्न सकिएन ।"
 
 #: wp-admin/network/users.php:268
 msgid "Users removed from spam."
