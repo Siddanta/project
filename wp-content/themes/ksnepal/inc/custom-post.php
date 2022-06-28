@@ -156,3 +156,49 @@ function customPostProgram()
   register_post_type('program', $args);
 }
 add_action('init', 'customPostProgram');
+
+function customPostGallery()
+{
+
+  $labels = array(
+    'name' => __('Gallery'),
+    'singular_name' => __('Gallery'),
+    'search_items' => __('Search Gallery'),
+    'all_items' => __('All Gallery'),
+    'parent_item' => __('Parent Gallery'),
+    'parent_item_colon' => __('Parent Gallery:'),
+    'edit_item' => __('Edit Gallery'),
+    'update_item' => __('Update Gallery'),
+    'add_new_item' => __('Add New Gallery'),
+    'new_item_name' => __('New Gallery Name'),
+    'menu_name' => __('Gallery'),
+  );
+
+  $args = array(
+    'label'   => __('Gallery'),
+    'description' => __('Gallery'),
+    'hierarchical' => false,
+    'labels'            => $labels,
+    'public'              => true,
+    'hierarchical'        => false,
+    'show_ui'             => true,
+    'show_in_menu'        => true,
+    'show_in_nav_menus'   => true,
+    'show_in_admin_bar'   => true,
+    'has_archive'         => false,
+    'can_export'          => true,
+    'exclude_from_search' => false,
+    'yarpp_support'       => true,
+    'taxonomies'         => array('post_tag'),
+    'publicly_queryable'  => true,
+    'menu_icon'          => 'dashicons-images-alt2',
+    'capability_type'     => 'page',
+    'rewrite'             => array(
+      'slug'            => 'gallery',
+    ),
+    'has_archive'       => true,
+    'supports'            => array('title', 'thumbnail', 'editor', 'excerpt'),
+  );
+  register_post_type('gallery', $args);
+}
+add_action('init', 'customPostGallery');

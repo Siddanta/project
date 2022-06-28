@@ -41,7 +41,7 @@ get_header();
                     <h2>क्षत्री समाज नेपाल केन्द्रीय कार्यसमिति</h2>
                     <div class="committee_row">
                         <?php
-                        echo do_shortcode('[ajax_load_more container_type="div" css_classes="row" post_type="committee" posts_per_page="20"  taxonomy="place" taxonomy_terms="central" transition_container="false" images_loaded="true" scroll="false" button_label="थप हेर्नुहोस्" orderby="menu order" order="ASC]');
+                        echo do_shortcode('[ajax_load_more container_type="div" css_classes="row" post_type="committee" posts_per_page="20"  taxonomy="place" taxonomy_terms="central" transition_container="false" images_loaded="true" scroll="false" button_label="थप हेर्नुहोस्"  order="ASC" orderby="menu_order" ]');
                         ?>
                     </div>
                 </div>

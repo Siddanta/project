@@ -30,11 +30,13 @@
                         <?php echo get_field('ks_committee_designation', get_the_ID()); ?>
                     </div>
                 </div>
-                <!-- <div class="content_social bck_overlap">
+                <?php if ($phone = get_field('ks_phone_number', get_the_ID())) { ?>
+                <div class="content_social bck_overlap">
                     <div class="item-social">
-                        <a href="#"><span>View</span></a>
+                        <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
                     </div>
-                </div> -->
+                </div>
+                <?php } ?>
             </div>
             <?php if (get_the_content()) { ?>
         </a>
