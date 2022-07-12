@@ -11,9 +11,18 @@
 
                         the_post_thumbnail('committee-mem');
                     } else { ?>
+                <?php
+                        $gender = get_field('ks_gender');
+                        if ($gender == 'Male') {
+                        ?>
                 <img class="lb-image"
-                    src="<?php echo get_field('ks_committee_member_optional_image', 'options')['sizes']['message'] ?>"
-                    alt="<?php echo get_field('ks_committee_member_optional_image', 'options')['alt']; ?>">
+                    src="<?php echo get_field('ks_committee_male_image', 'options')['sizes']['committee-mem'] ?>"
+                    alt="<?php echo get_field('ks_committee_male_image', 'options')['alt']; ?>">
+                <?php } else { ?>
+                <img class="lb-image"
+                    src="<?php echo get_field('ks_committee_female_image', 'options')['sizes']['committee-mem'] ?>"
+                    alt="<?php echo get_field('ks_committee_female_image', 'options')['alt']; ?>">
+                <?php } ?>
                 <?php } ?>
                 <?php if (get_the_content()) { ?>
             </a>
